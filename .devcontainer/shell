@@ -6,4 +6,4 @@
 # https://github.com/microsoft/vscode-remote-release/issues/2485
 # 🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦🤦
 
-exec docker exec -e TERM -it "$(docker ps -aqf "label=devcontainer.local_folder=$(pwd)")" sudo -u user bash -l
+exec docker exec -e TERM -it "$(docker ps -aqf "ancestor=roscon-2023-realtime-workshop")" sudo -u user bash -l
